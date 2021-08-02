@@ -1,5 +1,5 @@
 from flask_blog import app
-
+from flask import render_template
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def index():
+    return render_template('entries/index.html')
